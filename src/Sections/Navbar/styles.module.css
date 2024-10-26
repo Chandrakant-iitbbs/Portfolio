@@ -1,0 +1,83 @@
+.container{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.NavbarName{
+    color: var(--tc1);
+    font-family: var(--PortFontBold);
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 30px;
+    display: flex;
+    padding: 10px 0;
+}
+
+.navBar{
+    width: fit-content;
+    display: flex;
+    justify-content:space-around;
+    gap: 40px;
+    max-height: 70px;
+}
+
+.NavbarLinks{
+    width: fit-content;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 20px;
+    font-family: var(--PortFontLight);
+    letter-spacing: 1px;
+}
+.NavbarLinkText{
+    color: var(--tc2);
+}
+.NavbarLinks a:hover{
+    color: var(--tc1) !important;
+    text-decoration: underline;
+}
+
+.HamburgerContainer{
+    display: none;
+    padding-top: 10px;   
+    
+}
+.hamMenuList{
+    display: none;
+    list-style: none;
+    font-family: var(--PortFontLight);
+    background-color: var(--bg);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.hamMenuList ul{
+    padding-left: 0;
+
+}
+.hamMenuList ul li{
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.hamMenuList ul li:hover{
+    color: var(--tc1) !important;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1030px) {
+    .NavbarLinks{
+        display: none;
+    }
+    .HamburgerContainer{
+        display: flex;
+        flex-direction: row;
+    }
+}
