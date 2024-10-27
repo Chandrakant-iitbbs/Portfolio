@@ -1,0 +1,200 @@
+.introContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2%;
+    flex-direction: column;
+    padding-top: 60px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.introductionText{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 0 4%;
+    justify-content:space-around;
+}
+
+.greetings1{
+    color:var(--tc2);
+    font-family:var(--PortFontEBold);
+    font-size:70px;
+}
+.greetings2{
+    color:var(--tc1);
+    font-family:var(--PortFontLight);
+    font-size:50px;
+}
+
+.domainInfo{
+    display: flex;
+    justify-content: left;
+    gap: 5%;
+}
+
+.domainTxt{
+    color: var(--tc1);
+    font-family: var(--PortFontLight);
+    font-size: 50px;
+}
+.domainAni{
+    color: var(--tc4);
+    font-family: var(--PortFontBold);
+    font-size: 25px;
+    background-color: var(--tc1);
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+    height: fit-content;
+    animation-name: domainAnimation;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+}
+
+.introDescription{
+    color: var(--tc1);
+    font-family: var(--PortFontLight);
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+.introImg{
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35% !important;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .domainTxt{
+        font-size: 40px;
+    }
+    .domainAni{
+        font-size: 20px;
+    }
+    .domainInfo{
+        justify-content: center;
+    }
+    .introDescription{
+        font-size: 17px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 868px) {
+
+    .greetings1{
+        font-size: 50px;
+    }
+    .greetings2{
+        font-size: 40px;
+    }
+    .domainTxt{
+        font-size: 30px;
+    }
+    .domainAni{
+        font-size: 15px;
+    }
+    .introDescription{
+        font-size: 14px;
+        line-height: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 710px) {
+
+    .greetings1{
+        font-size: 45px;
+    }
+    .greetings2{
+        font-size: 35px;
+    }
+    .domainTxt{
+        font-size: 25px;
+    }
+    .domainAni{
+        font-size: 15px;
+    }
+    .introDescription{
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .greetings1{
+        font-size: 40px;
+    }
+    .greetings2{
+        font-size: 30px;
+    }
+    .domainTxt{
+        font-size: 20px;
+    }
+    .domainAni{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .greetings1{
+        font-size: 30px;
+    }
+    .greetings2{
+        font-size: 20px;
+    }
+    .domainTxt{
+        font-size: 12px;
+    }
+    .domainAni{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 468px) {
+   
+    .greetings1{
+        font-size: 25px;
+    }
+    .greetings2{
+        font-size: 20px;
+    }
+    .domainTxt{
+        font-size: 12px;
+    }
+    .domainAni{
+        font-size: 10px;
+    }
+}
+@keyframes domainAnimation {
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: linear
+    }
+    30%{
+        opacity: 1;
+        transform: translateY(0px);
+        transition: linear
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(0px);
+        transition:linear
+    }
+    100%{
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: linear
+    }
+}
