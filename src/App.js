@@ -5,6 +5,7 @@ import Intro from "./Sections/Introduction/Intro";
 import Education from "./Sections/Education/Education";
 import Achievement from "./Sections/Achievements/Achievement";
 import Skills from "./Sections/Skills/Skills"
+import Contact from "./Sections/Contact/Contact";
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
         <Education />
         <Achievement />
         <Skills/>
+        <Contact/>
       </BrowserRouter>
-
     </div>
   );
 }
