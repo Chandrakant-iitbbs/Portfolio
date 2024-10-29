@@ -13,8 +13,8 @@ const AchievementCard = (props) => {
             </div>
             <div className={styles.achCardAchList}>
                 <ul>
-                    {info.achList.map(val => {
-                        return <li>{val}</li>
+                    {info.achList.map((val, index) => {
+                        return <li key={index}>{val}</li>
                     })}
                 </ul>
             </div>
